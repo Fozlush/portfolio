@@ -1,0 +1,45 @@
+* {
+    color: #F3F3F3;
+}
+body {
+    background-color: #1d1d1d;
+}
+.color{
+    color: #e99400;
+}
+menu {
+    background-color: #181818;
+}
+menu svg {
+    fill: #e99400;
+}
+.page1 svg {
+    fill: #e99400;
+}
+nav ul {
+    background-color: #1d1d1d;
+}
+.nav-button {
+    background-color: #181818;
+}
+.nav-button:hover {
+    color: #e99400;
+    transition: 0.3s;
+}
+.transition-box {
+    background-color: #181818;
+}
+.transition-box-return, .transition-box-end {
+    background-color: transparent;
+}
+.transition-box-return {
+    background-color: transparent;
+}
+.projects-list a:hover {
+    color: #e99400;
+    transition: 0.3s;
+}
+.projects-list a:hover *{
+    color: #e99400;
+    transition: 0.3s;
+}

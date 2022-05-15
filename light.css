@@ -1,0 +1,42 @@
+* {
+    color: #1c1d25;
+}
+body {
+    background-color: #F3F3F3;
+}
+.color{
+    color: MediumSlateBlue;
+}
+menu {
+    background-color: lightgray;
+}
+menu svg {
+    fill: mediumslateblue;
+}
+.page1 svg {
+    fill: mediumslateblue;
+}
+nav ul {
+    background-color: #F3F3F3;
+}
+.nav-button {
+    background-color: lightgray;
+}
+.nav-button:hover {
+    color: MediumSlateBlue;
+    transition: 0.3s;
+}
+.transition-box {
+    background-color: lightgray;
+}
+.transition-box-return, .transition-box-end {
+    background-color: transparent;
+}
+.projects-list a:hover {
+    color: mediumslateblue;
+    transition: 0.3s;
+}
+.projects-list a:hover *{
+    color: mediumslateblue;
+    transition: 0.3s;
+}
