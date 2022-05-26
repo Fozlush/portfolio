@@ -43,6 +43,12 @@ let projects = [
 		title: 'Sapper',
 		description: 'Сапёр на React',
 		image: './img/Sapper.png'
+	},
+	{
+		link: 'https://tickets-filter.vercel.app/',
+		title: 'Tickets filter',
+		description: 'React, сортировка массива',
+		image: './img/Tickets filter.png'
 	}
 ]
 
