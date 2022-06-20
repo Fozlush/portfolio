@@ -49,6 +49,12 @@ let projects = [
 		title: 'Tickets filter',
 		description: 'React, сортировка массива',
 		image: './img/Tickets filter.png'
+	},
+	{
+		link: 'https://chat-f-fozlush.vercel.app/',
+		title: 'Chat',
+		description: 'Реалтайм чат',
+		image: './img/Chat.png'
 	}
 ]
 
