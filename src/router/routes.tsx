@@ -1,5 +1,5 @@
-import { AboutPage, ContactsPage, DetailPage, PortfolioPage } from "../components/pages"
-import { aboutPageRoute, contactsPageRoute, detailPageRoute, portfolioPageRoute } from "./paths"
+import { AboutPage, ContactsPage, PortfolioPage } from "../components/pages"
+import { aboutPageRoute, contactsPageRoute, portfolioPageRoute } from "./paths"
 
 export const routes = [
   {
@@ -9,10 +9,6 @@ export const routes = [
   {
     path: contactsPageRoute,
     element: <ContactsPage/>
-  },
-  {
-    path: detailPageRoute,
-    element: <DetailPage/>
   },
   {
     path: portfolioPageRoute,

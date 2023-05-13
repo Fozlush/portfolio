@@ -1,0 +1,36 @@
+.menu {
+  height: 100vh;
+  max-width: 250px;
+  width: 100%;
+  background-color: var(--background-support);
+  box-shadow: 0 0 5px 0 var(--shadow);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+}
+
+.top {
+  text-align: center;
+  .logo {
+    font-size: 72px;
+  }
+}
+
+nav {
+  ul {
+    li {
+      a {
+        width: 80%;
+        height: 45px;
+        margin: 5px auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        font-size: 22px;
+      }
+    }
+  }
+}
