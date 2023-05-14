@@ -24,8 +24,8 @@
       margin: 0 auto;
       color: #606060;
     }
-    &:hover .text {
-      color: black;
-    }
+  }
+  &:hover li .text {
+    color: black;
   }
 }

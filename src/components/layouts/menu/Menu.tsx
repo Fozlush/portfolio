@@ -6,10 +6,6 @@ import style from './menu.module.scss'
 const Menu: FC = () => {
   return (
     <menu className={style.menu}>
-      <div className={style.top}>
-        <span className={style.logo}>Я</span>
-        <span className={style.logo}>F</span>
-      </div>
       <nav className={style.navigation}>
         <ul>
           {links.map((data) => {
@@ -17,7 +13,6 @@ const Menu: FC = () => {
           })}
         </ul>
       </nav>
-      <div className={style.social}></div>
     </menu>
   )
 }
