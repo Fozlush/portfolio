@@ -1,3 +1,12 @@
+@font-face {
+  font-family: 'Ruberoid';
+  src: url('../../assets/fonts/Ruberoid-UltraLight.woff2') format('woff2'),
+       url('../../assets/fonts/Ruberoid-UltraLight.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; /* Оптимизация загрузки */
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -16,6 +25,7 @@ button, a {
 body {
   background-color: var(--background-color);
   color: var(--text-color);
+  font-family: 'Ruberoid', sans-serif;
 }
 
 .wrapper {
