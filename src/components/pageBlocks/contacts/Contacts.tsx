@@ -26,7 +26,7 @@ export const Contacts = () => {
     <h1 className={styles.contactsTitle}>Контакты</h1>
     <div className={styles.buttonsBlock}>
       {contactsData.map(({icon, link}) => {
-        return <ContactButton icon={icon} link={link}/>
+        return <ContactButton key={link} icon={icon} link={link}/>
       })}
     </div>
   </div>
