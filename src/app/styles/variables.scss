@@ -1,0 +1,38 @@
+@use "sass:color";
+@use "sass:map";
+
+$themes: (
+  light: (
+    background-color: #FFFFFF,
+    text-color: #161616,
+    primary-color: #8B00FF
+  ),
+  dark: (
+    background-color: #161616,
+    text-color: #FFFFFF,
+    primary-color: #FFA500
+  )
+);
+
+@mixin theme-variables($theme) {
+  $theme-map: map.get($themes, $theme);
+  
+  @each $key, $value in $theme-map {
+    --#{$key}: #{$value};
+    --#{$key}-rgb: #{color.channel($value, "red")}, #{color.channel($value, "green")}, #{color.channel($value, "blue")};
+  }
+}
+
+:root {
+  @include theme-variables(light);
+
+  @media (prefers-color-scheme: dark) {
+    &:not([data-theme]) {
+      @include theme-variables(dark);
+    }
+  }
+
+  &[data-theme='dark'] {
+    @include theme-variables(dark);
+  }
+}
