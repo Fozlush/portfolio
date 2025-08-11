@@ -4,7 +4,27 @@
   box-sizing: border-box;
 }
 
+button {
+  background-color: transparent;
+  border: none;
+}
+
+button, a {
+  cursor: pointer;
+}
+
 body {
   background-color: var(--background-color);
   color: var(--text-color);
+}
+
+.wrapper {
+  width: 100%;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1320px;
+  padding: 0 20px;
+  width: 100%;
 }

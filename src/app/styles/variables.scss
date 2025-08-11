@@ -5,12 +5,14 @@ $themes: (
   light: (
     background-color: #FFFFFF,
     text-color: #161616,
-    primary-color: #8B00FF
+    primary-color: #8B00FF,
+    primary-to-gradient-color: #AA22AA
   ),
   dark: (
     background-color: #161616,
     text-color: #FFFFFF,
-    primary-color: #FFA500
+    primary-color: #FFA500,
+    primary-to-gradient-color: #EEBB11
   )
 );
 
@@ -21,6 +23,18 @@ $themes: (
     --#{$key}: #{$value};
     --#{$key}-rgb: #{color.channel($value, "red")}, #{color.channel($value, "green")}, #{color.channel($value, "blue")};
   }
+
+  --gradient-horizontal: linear-gradient(
+    90deg, 
+    var(--primary-to-gradient-color) 0%, 
+    var(--primary-color) 100%
+  );
+
+  --gradient-radial: radial-gradient(
+    circle at center, 
+    var(--primary-to-gradient-color) 0%, 
+    var(--primary-color) 100%
+  );
 }
 
 :root {

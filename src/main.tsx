@@ -4,6 +4,10 @@ import App from './app/App.tsx'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <App />
+    <div className='wrapper'>
+      <div className='container'>
+        <App />
+      </div>
+    </div>
   </StrictMode>,
 )
