@@ -1,0 +1,1 @@
+export { default as ThemeToggleIcon } from './themeToggle.svg?react';

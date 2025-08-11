@@ -1,0 +1,16 @@
+.toggle {
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  top: 0;
+  right: 20px;
+  background-color: var(--text-color);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+
+  svg {
+    width: 25px;
+    height: 25px;
+    fill: var(--background-color);
+  }
+}

@@ -30,6 +30,15 @@ body {
 
 .wrapper {
   width: 100%;
+  min-height: 100vh;
+  background-image: url('../../assets/mainBG-black.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  [data-theme='dark'] & {
+    background-image: url('../../assets/mainBG.svg');
+  }
 }
 
 .container {
