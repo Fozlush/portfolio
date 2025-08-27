@@ -12,7 +12,7 @@
 
 .name {
   margin-top: 16px;
-  font-size: 64px;
+  font-size: 48px;
   font-weight: 500;
 }
 
@@ -50,4 +50,10 @@
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
+}
+
+@media (min-width: 960px) {
+  .name {
+    font-size: 64px;
+  }
 }

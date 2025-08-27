@@ -1,6 +1,6 @@
 .wrapper {
-  width: 120px;
-  height: 120px;
+  width: 60px;
+  height: 60px;
   box-shadow: 0 0 8px 1px var(--text-color);
   border-radius: 50%;
   display: flex;
@@ -11,8 +11,8 @@
 
 .content {
   background-color: var(--text-color);
-  width: 100px;
-  height: 100px;
+  width: 48px;
+  height: 48px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -20,26 +20,70 @@
   transition: all 0.3s ease;
 
   svg {
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
     fill: var(--background-color);
     transition: all 0.3s ease;
   }
 }
 
 .wrapper:hover {
-  width: 165px;
-  height: 165px;
   box-shadow: 0 0 8px 1px var(--primary-color);
 
   .content {
-    width: 140px;
-    height: 140px;
     background: var(--gradient-radial);
+  }
+}
+
+@media (min-width: 480px) {
+  .wrapper {
+    width: 88px;
+    height: 88px;
+  }
+
+  .content {
+    background-color: var(--text-color);
+    width: 72px;
+    height: 72px;
 
     svg {
-      width: 100px;
-      height: 100px;
+      width: 48px;
+      height: 48px;
+    }
+  }
+}
+
+@media (min-width: 960px) {
+  .wrapper {
+    width: 120px;
+    height: 120px;
+  }
+
+  .content {
+    background-color: var(--text-color);
+    width: 100px;
+    height: 100px;
+
+    svg {
+      width: 60px;
+      height: 60px;
+    }
+  }
+
+  .wrapper:hover {
+    width: 165px;
+    height: 165px;
+    box-shadow: 0 0 8px 1px var(--primary-color);
+
+    .content {
+      width: 140px;
+      height: 140px;
+      background: var(--gradient-radial);
+
+      svg {
+        width: 100px;
+        height: 100px;
+      }
     }
   }
 }

@@ -5,15 +5,38 @@
 
 .contactsTitle {
   text-align: center;
-  font-size: 96px;
+  font-size: 64px;
   font-weight: 700;
 }
 
 .buttonsBlock {
-  margin-top: 50px;
-  height: 165px;
+  margin-top: 32px;
+  height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 35px;
+  gap: 25px;
+}
+
+@media (min-width: 480px) {
+  .contactsTitle {
+    font-size: 80px;
+  }
+
+  .buttonsBlock {
+    height: 88px;
+    gap: 30px;
+  }
+}
+
+@media (min-width: 960px) {
+  .contactsTitle {
+    font-size: 96px;
+  }
+
+  .buttonsBlock {
+    margin-top: 50px;
+    height: 165px;
+    gap: 35px;
+  }
 }
