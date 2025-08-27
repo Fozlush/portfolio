@@ -1,16 +1,19 @@
-import { defineConfig } from 'vite'
-import svgr from 'vite-plugin-svgr';
-import react from '@vitejs/plugin-react'
-import path from 'path';
+import { defineConfig } from "vite";
+import svgr from "vite-plugin-svgr";
+import react from "@vitejs/plugin-react";
+import path from "path";
 
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [react(), svgr({
-      include: '**/*.svg?react',
+  plugins: [
+    react(),
+    svgr({
+      include: "**/*.svg?react",
       svgrOptions: {
-        exportType: 'default',
-      }
-    })],
+        exportType: "default",
+      },
+    }),
+  ],
   css: {
     preprocessorOptions: {
       scss: {
@@ -20,7 +23,7 @@ export default defineConfig({
   },
   resolve: {
     alias: {
-      '@': path.resolve(__dirname, './src'),
+      "@": path.resolve(__dirname, "./src"),
     },
   },
-})
+});

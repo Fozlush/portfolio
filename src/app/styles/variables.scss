@@ -3,38 +3,40 @@
 
 $themes: (
   light: (
-    background-color: #FFFFFF,
+    background-color: #ffffff,
     text-color: #161616,
-    light-color: #E0E0E0,
-    primary-color: #8B00FF,
-    primary-to-gradient-color: #AA22AA
+    light-color: #e0e0e0,
+    primary-color: #8b00ff,
+    primary-to-gradient-color: #aa22aa,
   ),
   dark: (
     background-color: #161616,
-    text-color: #FFFFFF,
-    light-color: #2C2C2D,
-    primary-color: #FFA500,
-    primary-to-gradient-color: #EEBB11
-  )
+    text-color: #ffffff,
+    light-color: #2c2c2d,
+    primary-color: #ffa500,
+    primary-to-gradient-color: #eebb11,
+  ),
 );
 
 @mixin theme-variables($theme) {
   $theme-map: map.get($themes, $theme);
-  
+
   @each $key, $value in $theme-map {
     --#{$key}: #{$value};
-    --#{$key}-rgb: #{color.channel($value, "red")}, #{color.channel($value, "green")}, #{color.channel($value, "blue")};
+    --#{$key}-rgb:
+      #{color.channel($value, "red")}, #{color.channel($value, "green")},
+      #{color.channel($value, "blue")};
   }
 
   --gradient-horizontal: linear-gradient(
-    90deg, 
-    var(--primary-to-gradient-color) 0%, 
+    90deg,
+    var(--primary-to-gradient-color) 0%,
     var(--primary-color) 100%
   );
 
   --gradient-radial: radial-gradient(
-    circle at center, 
-    var(--primary-to-gradient-color) 0%, 
+    circle at center,
+    var(--primary-to-gradient-color) 0%,
     var(--primary-color) 100%
   );
 }
@@ -48,7 +50,7 @@ $themes: (
     }
   }
 
-  &[data-theme='dark'] {
+  &[data-theme="dark"] {
     @include theme-variables(dark);
   }
 }
