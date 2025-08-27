@@ -3,7 +3,7 @@ import {
   LinkedinIcon,
   MailIcon,
   TelegramIcon,
-} from "../../../assets/contacts";
+} from "@assets/contacts";
 import { ContactButton } from "./contactButton/ContactButton";
 import styles from "./contacts.module.scss";
 

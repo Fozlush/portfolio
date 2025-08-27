@@ -1,4 +1,4 @@
-import { ChevronIcon } from "../../../assets";
+import { ChevronIcon } from "@assets/index";
 import styles from "./greetings.module.scss";
 
 export const Greetings = () => {
